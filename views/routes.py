@@ -2,7 +2,7 @@ from flask import Blueprint, render_template, request, redirect, url_for, sessio
 
 views = Blueprint('views', __name__)
 
-# Simulated user database with roles
+
 users = {
     "faculty": {"password": "pass123", "role": "faculty"},
     "student": {"password": "stud123", "role": "student"}
