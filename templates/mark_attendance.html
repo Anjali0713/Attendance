@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head><title>Mark Attendance</title></head>
+<body>
+  <h2>Mark Attendance</h2>
+  <form method="post">
+    Student Name: <input name="student"><br>
+    <button type="submit">Mark Present</button>
+  </form>
+  <a href="{{ url_for('views.dashboard') }}">Back to Dashboard</a>
+</body>
+</html>

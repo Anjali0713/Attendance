@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html>
+<head><title>Dashboard</title></head>
+<body>
+  <h2>Welcome, {{ username }} ({{ role }})</h2>
+  <a href="{{ url_for('views.mark_attendance') }}">Mark Attendance</a><br>
+  <a href="{{ url_for('views.view_attendance') }}">View Attendance</a>
+</body>
+</html>

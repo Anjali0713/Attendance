@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head><title>View Attendance</title></head>
+<body>
+  <h2>Attendance Records</h2>
+  <ul>
+    {% for student, status in attendance.items() %}
+      <li>{{ student }}: {{ status }}</li>
+    {% endfor %}
+  </ul>
+  <a href="{{ url_for('views.dashboard') }}">Back to Dashboard</a>
+</body>
+</html>
